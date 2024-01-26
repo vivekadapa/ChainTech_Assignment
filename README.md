@@ -24,7 +24,7 @@ Body:
 Sample=>{
   "title": "Task Title",
   "description": "Task Description",
-  "completeBy": "YYYY-MM-DD"
+  "completeBy": "2024-01-31"
 }
 ###### PATCH request to /markcomplete with query id where id is the id of the document of the particular task so request to /markcomplete?id=
 ###### PATCH request to /edittask with id,title,description,completeBy as body of the request to edit the task
@@ -33,7 +33,7 @@ Sample=>{
   "id": "task_id",
   "title": "Updated Task Title",
   "description": "Updated Task Description",
-  "completeBy": "YYYY-MM-DD"
+  "completeBy": "2021-01-04"
 }
 ###### DELETE request to /deletetask with query id request to /deletetask?id=
 
