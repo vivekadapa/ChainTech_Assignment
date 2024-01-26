@@ -18,7 +18,7 @@ Use Postman or any other api flatform to send requests and test the api.
 
 ## Testing each feature
 
-###### GET request to /viewtasks to view all the requests
+###### GET request to /viewtasks to view all the tasks
 ###### POST request to /addtask with title,description,completeBy as body of the request and completeBy should be of the form "YYYY-MM-DD"
 Body:
 Sample=>{
