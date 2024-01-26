@@ -20,16 +20,16 @@ Use Postman or any other api flatform to send requests and test the api.
 
 ###### GET request to /viewtasks to view all the requests
 ###### POST request to /addtask with title,description,completeBy as body of the request and completeBy should be of the form "YYYY-MM-DD"
-######Body:
-######Sample=>{
+Body:
+Sample=>{
   "title": "Task Title",
   "description": "Task Description",
   "completeBy": "YYYY-MM-DD"
 }
 ###### PATCH request to /markcomplete with query id where id is the id of the document of the particular task so request to /markcomplete?id=
 ###### PATCH request to /edittask with id,title,description,completeBy as body of the request to edit the task
-######Body:
-######Sample=>{
+Body:
+Sample=>{
   "id": "task_id",
   "title": "Updated Task Title",
   "description": "Updated Task Description",
