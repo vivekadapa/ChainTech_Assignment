@@ -62,10 +62,14 @@ app.patch('/markcomplete', async (req, res) => {
 
 app.patch('/edittask', async (req, res) => {
     console.log(req.body);
-    const { id, title, description } = req.body;
+    const { id, title, description,completeBy } = req.body;
+    const completeby = new Date(completeBy)
+    if (completeby < Date.now()) {
+        return res.status(422).send("Enter valid date");
+    }
     console.log(Date.now())
     try {
-        const task = await Task.findByIdAndUpdate(id, { title, description });
+        const task = await Task.findByIdAndUpdate(id, { title, description,completeby });
         console.log(task);
         res.status(200).send("Task Updated Successfully")
     } catch (error) {
